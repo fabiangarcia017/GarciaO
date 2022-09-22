@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    display: grid;
+    background-color: rgb(0, 225, 250);
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 20% 70% 10%; 
+    grid-template-areas: 'Menulat Encabezado Encabezado'
+                         'Menulat Columna1 Columna2'
+                         'Menulat Plepagins Plepagins';
+    /*justify-content: center;
+    align-content: center;
+    justify-items:stretch;
+    align-items: stretch;*/
+}
+.caja{
+    background-color: black;
+    color: brown;
+    /*height: 100px;*/
+    /*margin: 1px;*/
+   /* width: 100px;*/
+    text-align: center;
+    border: 3px solid green;
+
+}
+#caja1{grid-area: Menulat;}
+#caja2{grid-area: Encabezado;}
+#caja3{grid-area: Columna1;}
+#caja4{grid-area: Columna2;}
+#caja5{grid-area: Plepagins;}
+
+#caja1:hover
+{
+    width: 200%;
+    height: 200%;
+}
