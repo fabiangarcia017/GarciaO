@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    display: grid;
+    background-color: rgb(0, 225, 250);
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%; 
+    grid-template-areas: 'Encabezado Encabezado Encabezado'
+                         'Menulat Columna1 Columna2'
+                         'Plepagins Plepagins Plepagins';
+    /*justify-content: center;
+    align-content: center;
+    justify-items:stretch;
+    align-items: stretch;*/
+}
+.caja{
+    background-color: rgba(72, 0, 255, 0.644);
+    color: rgb(240, 240, 240);
+    /*height: 100px;*/
+    /*margin: 1px;*/
+   /* width: 100px;*/
+    text-align: center;
+    border: 3px solid green;
+
+}
+#caja1{grid-area: Menulat;}
+#caja2{grid-area: Encabezado;}
+#caja3{grid-area: Columna1;}
+#caja4{grid-area: Columna2;}
+#caja5{grid-area: Plepagins;}
+
+#caja1{background-color: black}
+#caja2{background-color: rgb(156, 116, 30)}
+#caja3{background-color: rgb(17, 92, 42)}
+#caja4{background-color: rgb(137, 21, 172)}
+#caja5{background-color: rgb(240, 0, 0)}
+
+@media screen and (max-width: 900px){
+    .contenedor{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%; 
+    grid-template-areas: 'Encabezado Encabezado'
+                         'Menulat Menulat '
+                         'Columna1 Columna2' 
+                         'Plepagins Plepagins';
+                         
+    }
+}
+

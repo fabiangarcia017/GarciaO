@@ -1,0 +1,20 @@
+*{
+    box-sizing:border-box;
+   
+}
+.contenedor{
+    background-color: aquamarine;
+    width: 100 px;
+    height: 600 px;
+}
+.caja{
+
+    border-color: blue;
+    height: 100px;
+    margin: 2px;
+    width: calc((100%/6)- 4 px);
+    float: left;
+    text-align: center;
+
+}
+
