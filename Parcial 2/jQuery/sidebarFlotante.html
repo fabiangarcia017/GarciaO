@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="sidebarFlotante.css"
-    <link rel="stylesheet" href="sidebarFlotante.js"
+    <link rel="stylesheet" href="sidebarFlotante.css">
+    
+    <script src="jquery-3.6.1.min.js"></script>
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <button id="miButton1" onclick="alert('Click on BUtton')">HOLA MUNDO 1</button>
+    <button id="miButton1" onclick="alert('Click escuchado jQuery')">HOLA MUNDO 1</button>
     <button id="miButton2" >HOLA MUNDO 2</button>
     <button id="miButton3"> HOLA MUNDO 3</button>
     <script>
@@ -19,6 +21,13 @@
  
      function miFuncion1() { alert("Click en Boton 3 / Funcion 1");}
      function miFuncion2() { alert('Click en Boton 3 / Funcion 2');}
+     $(document).ready(function(){
+        console.log("jQuery se cargo")
+        $('Button1').click(function()
+        {
+            alert("click escuchado jQuery");
+        })
+     });
     </script>
     
     <div class="contenedor">

@@ -11,4 +11,4 @@
 - Max-width: ancho máximo. El elemento no puede ser más ancho que el valor especificado pero sí puede achicarse
 - Min-width: ancho mínimo.  El elemento no puede ser más angosto que el valor especificado pero sí puede agrandarse
 - Max-height: alto máximo. El elemento no puede ser más alto que el valor especificado pero sí puede achicarse
-- Min-height: alto mínimo. El elemento no puede ser más bajo que el valor especificado pero sí puede agrandarses
+- Min-height: alto mínimo. El elemento no puede ser más bajo que el valor especificado pero sí puede agrandarse
