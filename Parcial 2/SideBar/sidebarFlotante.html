@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="sidebarFlotante.css"
+    <link rel="stylesheet" href="sidebarFlotante.js"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="miButton1" onclick="alert('Click on BUtton')">HOLA MUNDO 1</button>
+    <button id="miButton2" >HOLA MUNDO 2</button>
+    <button id="miButton3"> HOLA MUNDO 3</button>
+    <script>
+        document.getElementById("miButton2").onclick = function(){alert("Click Button 2")};
+        document.querySelector('#miButton3').addEventListener("click",miFuncion2);
+    document.querySelector('#miButton3').addEventListener("click",miFuncion1);
+ 
+     function miFuncion1() { alert("Click en Boton 3 / Funcion 1");}
+     function miFuncion2() { alert('Click en Boton 3 / Funcion 2');}
+    </script>
+    
+    <div class="contenedor">
+        <div class="sidebar">
+            <a id="opc1" href="#Opcion1">Opcion1</a>
+            <a id="opc2" href="#Opcion2">Opcion2</a>
+            <a id="opc3" href="#Opcion3">Opcion3</a>
+            <a id="opc4" href="#Opcion4">Opcion4</a>
+        </div>
+        <div class="Content">
+        </div>
+    </div>
+
+</body>
+</html>
